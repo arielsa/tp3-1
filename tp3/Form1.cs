@@ -34,5 +34,31 @@ namespace tp3
                 MessageBox.Show("Error de Carga");
             }
         }
+
+        private void btn_add_2_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text != "" && listBox2.Items.Count < 5)
+            {
+                listBox2.Items.Add(textBox2.Text);
+                textBox2.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Error de Carga");
+            }
+        }
+
+        private void btn_sum_Click(object sender, EventArgs e)
+        {
+            if (listBox1.Items.Count == listBox2.Items.Count)
+            {
+                listBox3.Items.Clear();
+                for (int i = 0; i < listBox1.Items.Count; i++)
+                {
+                    listBox3.Items.Add(int.Parse(listBox2.Items[i].ToString()) +
+                   int.Parse(listBox1.Items[i].ToString()));
+                }
+            }
+        }
     }
 }

@@ -97,6 +97,7 @@
             this.btn_add_2.TabIndex = 7;
             this.btn_add_2.Text = "agregar";
             this.btn_add_2.UseVisualStyleBackColor = true;
+            this.btn_add_2.Click += new System.EventHandler(this.btn_add_2_Click);
             // 
             // btn_sum
             // 
@@ -106,6 +107,7 @@
             this.btn_sum.TabIndex = 8;
             this.btn_sum.Text = "sumar filas";
             this.btn_sum.UseVisualStyleBackColor = true;
+            this.btn_sum.Click += new System.EventHandler(this.btn_sum_Click);
             // 
             // Form1
             // 
